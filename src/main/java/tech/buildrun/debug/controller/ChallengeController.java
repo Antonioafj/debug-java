@@ -19,7 +19,7 @@ public class ChallengeController {
 
     @GetMapping("/one")
     public ResponseEntity<Void> one(
-            @RequestParam(name = "number", required = false) Integer number) {
+            @RequestParam(name = "number", required = true) Integer number) {
 
         if (number > 0) {
             System.out.println("Numero Positivo");
